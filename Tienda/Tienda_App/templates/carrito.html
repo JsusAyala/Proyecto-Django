@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Proyecto Aplicaciones Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#sobre-mi">Sobre mi</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="#" id="login-btn">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="main-content">
+        <h1>Carrito de Compras</h1>
+        
+        <div class="cart-items">
+            <!-- Ejemplo de un item en el carrito -->
+            <div class="cart-item">
+                <img src="Imagenes/Xbox.jpg" alt="Xbox Series S" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Xbox Series S</h3>
+                    <p>Precio: $5,399</p>
+                    <p>Cantidad: <input type="number" value="1" min="1" max="10"></p>
+                    <button class="remove-item">Eliminar</button>
+                </div>
+            </div>
+            
+            <!-- Añade más items aquí -->
+        </div>
+        
+        <div class="cart-summary">
+            <h2>Resumen del Pedido</h2>
+            <p>Subtotal: $5,399</p>
+            <p>Envío: Gratis</p>
+            <p>Total: $5,399</p>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <!-- Modal de inicio de sesión -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
